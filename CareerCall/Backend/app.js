@@ -21,8 +21,11 @@ app.get('/', (req, res) => {
 
 app.get('/jobs', (req, res) => {
    res.send ('<h1> these are the new jobs</h1>')
-}
-)
+})
+
+app.get ('/about', (rep, res)=> {
+    res.send ('<p> here is the about page for the website </p>')
+})
 
 
 app.listen(PORT, () => {
