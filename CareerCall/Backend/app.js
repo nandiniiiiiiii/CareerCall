@@ -27,6 +27,10 @@ app.get ('/about', (rep, res)=> {
     res.send ('<p> here is the about page for the website </p>')
 })
 
+app.get ('/seacrh', (rep, res)=> {
+    res.send ('<p> here is the sreach page for the website </p>')
+})
+
 
 app.listen(PORT, () => {
     console.log(`Server Running At At ${PORT}`)
