@@ -19,6 +19,11 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/jobs', (req, res) => {
+   res.send ('<h1> these are the new jobs</h1>')
+}
+)
+
 
 app.listen(PORT, () => {
     console.log(`Server Running At At ${PORT}`)
