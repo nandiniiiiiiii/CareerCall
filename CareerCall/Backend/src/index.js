@@ -3,6 +3,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const {pythonShell, PythonShell} = require('python-shell');
 const app = express();
+const connectDB = require('./db/index.js');
 
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
@@ -37,6 +38,13 @@ dotenv.config({
   path: './env'
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server is running on http://localhost:${process.env.PORT}`);
-});
+connectDB()
+.then(()=>{
+  app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server is running on http://localhost:${process.env.PORT}`);
+  });
+})
+.catch((err)=>{
+  console.log("MONGO db connection failed !!! ", err);
+})
+
