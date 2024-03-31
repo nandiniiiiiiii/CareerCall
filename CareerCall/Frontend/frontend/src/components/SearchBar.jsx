@@ -9,7 +9,7 @@ function SearchBar() {
         console.log(data);
         e.preventDefault();
         try {
-            await axios.post('http://localhost:3000/data', data);
+            await axios.post('http://localhost:8000/data', data);
             alert('Data submitted successfully!');
         }
         catch (error) {

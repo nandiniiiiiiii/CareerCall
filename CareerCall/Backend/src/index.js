@@ -21,10 +21,10 @@ app.post('/data', (req, res) => {
   console.log('Received input:', inputData);
   //connecting python
   let options = {
-    scriptPath: "C:/Users/Manoj/Dropbox/My PC (LAPTOP-DT2730KE)/Desktop/git1/Web-Scraping/Price-Tracker/backend/WebScraping",
+    scriptPath: "C:/Users/Manoj/Dropbox/My PC (LAPTOP-DT2730KE)/Desktop/git1/CareerCall/CareerCall/CareerCall/Backend/WebScraping",
     args: [inputData]
   }
-  PythonShell.run("demo.py",options).then(res=>{
+  PythonShell.run("start.py",options).then(res=>{
     // if(error) console.log(error)
     // if(res) console.log(res)
     console.log(res)
@@ -40,7 +40,7 @@ dotenv.config({
 
 connectDB()
 .then(()=>{
-  app.listen(process.env.PORT || 3000, () => {
+  app.listen(process.env.PORT || 8000, () => {
     console.log(`Server is running on http://localhost:${process.env.PORT}`);
   });
 })
