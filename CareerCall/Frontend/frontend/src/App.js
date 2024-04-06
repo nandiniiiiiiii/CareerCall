@@ -1,11 +1,16 @@
-import './App.css';
-import SearchBar from './components/SearchBar';
+import React from 'react'
+import { Routes, Route, BrowserRouter, } from 'react-router-dom';
+import {Signin,Signup,Home} from './components';
 
 function App() {
   return (
-    <div>
-      <SearchBar/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/signup' element={<Signup/>}>SignUp</Route>
+        <Route path='/signin' element={<Signin />}>Login</Route>
+        <Route path='/' element={<Home />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

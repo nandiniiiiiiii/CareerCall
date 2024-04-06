@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios';
+import './Searchbar.css';
 
 function SearchBar() {
     const [value, setValue] = useState('');
@@ -19,10 +20,10 @@ function SearchBar() {
     }
     return (
         <div>
-            <h3>Hello</h3>
+            <p><b>Make a call to your career</b></p>
             <input
                 type='text'
-                placeholder='Enter item to be searched'
+                placeholder='Search for the job..'
                 onChange={(e) => setValue(e.target.value)}
             />
             <button

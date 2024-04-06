@@ -4,16 +4,19 @@ const dotenv = require('dotenv');
 const {pythonShell, PythonShell} = require('python-shell');
 const app = express();
 const connectDB = require('./db/index.js');
+const User = require('./routes/user.route.js')
 
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
     Credential: true
 }))
 app.use(express.json());
+dotenv.config({
+  path: './env'
+});
 
-app.get('/',(req,res)=>{
-  res.send('Hello world');
-})
+//user route
+app.use('/api/auth',User);
 
 app.post('/data', (req, res) => {
   // console.log("hello")
@@ -32,10 +35,6 @@ app.post('/data', (req, res) => {
   // console.log("hogaya");
   // res.end(`<h1>${inputData}</h1>`)
   res.sendStatus(200);
-});
-
-dotenv.config({
-  path: './env'
 });
 
 connectDB()
