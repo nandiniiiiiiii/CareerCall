@@ -1,14 +1,17 @@
 import React from 'react'
-import { Routes, Route, BrowserRouter, } from 'react-router-dom';
-import {Signin,Signup,Home} from './components';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Signin, Signup, Home, NavBar, About, Contact } from './components';
 
 function App() {
   return (
     <BrowserRouter>
+      <NavBar />
       <Routes>
-        <Route path='/signup' element={<Signup/>}>SignUp</Route>
-        <Route path='/signin' element={<Signin />}>Login</Route>
-        <Route path='/' element={<Home />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path='/signin' element={<Signin/>}/>
+        <Route path='/signup' element={<Signup/>} />
       </Routes>
     </BrowserRouter>
   );

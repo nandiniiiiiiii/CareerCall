@@ -1,21 +1,29 @@
-.form-container {
-    max-width: 300px;
+.container {
+    height: 300px;
+    width: 300px;
     padding: 10px;
     background-color: white;
     border: 2px solid rgb(230, 228, 228);
     margin: 10% 30% 10% 38%;
   }
   
-  .form-container input[type=text], .form-container input[type=password], .form-container input[type=email] {
-    width: 100%;
+  .container input[type=text], .form-container input[type=password], .form-container input[type=email] {
     padding: 15px;
     margin: 5px 0 9px 0;
     border: none;
     border-bottom: 2px solid rgb(95, 95, 245);
     background: #e7e6e6;
+    width: 100px;
   }
   
-  .form-container .btn {
+  .text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .btn {
     background-color: rgb(116, 116, 242);
     color: white;
     padding: 16px 20px;
@@ -37,24 +45,30 @@
       margin-bottom: 36px;
   }
   
-  .form-container .btn:hover{
+  .container .btn:hover{
       background-color: rgb(22, 22, 225);
   }
-  a.forget{
-      line-height: 0px;
-      font-size: 11px;
-      float: right;
-      text-decoration: none;
-  }
   a.sign-up{
-      text-decoration: none;
       text-decoration: none;
   }
   
   .username{
       border-bottom: 2px solid rgb(42, 42, 242);
   }
+  .password{
+      border-bottom: 2px solid rgb(42, 42, 242);
+  }
+  .email{
+      border-bottom: 2px solid rgb(42, 42, 242);
+  }
   
   .set-up{
       text-align: center;
+  }
+
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
   }
