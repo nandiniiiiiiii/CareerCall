@@ -68,7 +68,7 @@ function Signup() {
       <FormContainer>
         <form onSubmit={(e) => handleSubmit(e)} className='container'>
           <h1 className='title'>
-            Chat app
+            SIGNUP
           </h1>
           <div className='box'>
             <input type='text'
@@ -87,7 +87,7 @@ function Signup() {
               onChange={(e) => handlechange(e)}
             />
             <button type='submit'>Create Account</button>
-            <span>Already have an account ? <Link className='link' to="/">Login</Link></span>
+            <span>Already have an account ? <Link className='link' to="/signin">Login</Link></span>
           </div>
         </form>
       </FormContainer>
@@ -97,71 +97,70 @@ function Signup() {
 }
 
 const FormContainer = styled.div`
-  height: 100vh;
-  width: 100vw;
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+background-color: white;
+border: 2px solid rgb(230, 228, 228);
+height: 450px;
+width: 350px;
+transform: translate(130%,8%);
+.container {
+  height: 50vh; 
+  width: 50vw;
   display: flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  background-color: black;
-  color: white;
   .title{
+    color: rgb(42, 42, 242);
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .container {
-    height: 50vh; 
-    width: 50vw;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    h1{
-      font-size: 3rem;
-      text-transform: uppercase;
-    }
-  }
-  input{
-    width: 25vw;
-    height: 5vh;
-    border: 2px white solid;
-    color: black;
-    font-size: 1rem;
-    &:focus{
-      width: 26vw;
-      height: 6vh;
-    }
-  }
-  button{
-    width: 25vw;
-    height: 7vh;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: 0.5s ease-in-out;
-    &:hover{
-      background-color: black;
-      color: white;
-      border: white 2px solid;
-    }
   }
   .box{
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     border: 2px white solid;
-    padding: 60px 50px;
-  }
+    input{
+      border-bottom: 2px solid rgb(42, 42, 242);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      margin: 5px 0 9px 0;
+      border: none;
+      border-bottom: 2px solid rgb(95, 95, 245);
+      background: #e7e6e6;
+      width: 250px;
+    }
+    button{
+      background-color: rgb(116, 116, 242);
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 280px;
+      margin-bottom:17px;
+      opacity: 0.8;s
+      transition: 0.5s ease-in-out;
+      &:hover{
+        background-color: rgb(22, 22, 225);
+        color: white;
+      }
+    }
   span{
     .link{
       text-decoration: none;
       color: blue;
     }
   }
+}
 `;
 
 export default Signup
