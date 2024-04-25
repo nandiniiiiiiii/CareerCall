@@ -5,6 +5,7 @@ const {pythonShell, PythonShell} = require('python-shell');
 const app = express();
 const connectDB = require('./db/index.js');
 
+
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
     Credential: true
@@ -47,4 +48,9 @@ connectDB()
 .catch((err)=>{
   console.log("MONGO db connection failed !!! ", err);
 })
+
+
+ 
+
+
 

@@ -1,0 +1,172 @@
+
+.desktop-4 .job-img-21 {
+  mix-blend-mode: multiply;
+  border-radius: 50px;
+  background: url('assets/images/JobImg21.jpeg') 50% / cover no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 135px;
+  width: 616px;
+  height: 445px;
+}
+
+.desktop-4 .job-img-3 {
+  mix-blend-mode: multiply;
+  background: url('assets/images/JobImg3.jpeg') 60% / cover no-repeat;
+  margin-bottom: 597px;
+  width: 800px;
+  height: 500px;
+}
+.desktop-4 .about-us {
+  position: relative;
+  margin: 0 539px 10px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Lemon';
+  font-weight: 400;
+  font-size: 55px;
+  color: var(--foundation-purplepurple-500, #6200EE);
+}
+.desktop-4 .container {
+  background: url('assets/images/Job51.png') 50% / cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 118px 108px 417px 104px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.desktop-4 .container-1 {
+  display:flex;
+  flex-direction: row;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.home,
+.about,
+.separator {
+  margin-right: 15px; /* Adjust the spacing between items */
+}
+
+.separator {
+  color: #000; /* Set the color of the separator */
+}
+
+.desktop-4 .container-2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.desktop-4 .about {
+  margin-top: 3px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Calistoga';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+.desktop-4 .container {
+  margin: 0 24.9px 3px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Calistoga';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+.desktop-4 .rectangle-10 {
+  opacity: 0.5;
+  mix-blend-mode: color;
+  background: var(--foundation-purplepurple-400, #8133F1);
+  position: absolute;
+  left: 31px;
+  top: 40px;
+  width: 1372px;
+  height: 1580px;
+}
+.desktop-4 .rectangle-11 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: var(--foundation-blue-lighthover-1, #EDE8FF);
+  position: absolute;
+  left: 50%;
+  top: 64px;
+  translate: -50% 0;
+  width: 1298px;
+  height: 1520px;
+}
+.desktop-4 {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
+  box-sizing: border-box;
+}
+.desktop-4 .text1 {
+  opacity: 1;
+  position: relative;
+  margin-right: 34px;
+  text-align: justify;
+  overflow-wrap: break-word;
+  font-family: 'Calistoga';
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.69);
+}
+.desktop-4 .frame-1 {
+  border-radius: 0 0 15px 15px;
+  background: var(--foundation-blue-lighthover, #EDE8FF);
+  margin-right: 3px;
+  display: flex;
+  flex-direction: row;
+  padding: 26px 0 25px 45px;
+  width: 1440px;
+  box-sizing: border-box;
+}
+.desktop-4 .career-call {
+  margin-right: 26px;
+  width: 310.2px;
+  overflow-wrap: break-word;
+  font-family: 'Lemon';
+  font-weight: 400;
+  font-size: 45px;
+  color: var(--foundation-purplepurple-500, #6200EE);
+}
+.desktop-4 .home {
+  margin: 3px 25.4px 0 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Calistoga';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+.desktop-4 .text2 {
+  position: absolute;
+  right: 20px; /* Adjust the distance from the right side */
+  bottom: 210px;
+  width: 500px; /* Set the width of the box */
+  padding: 10px; /* Add padding for spacing */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  text-align: justify;
+  overflow-wrap: break-word;
+  font-family: 'Calistoga';
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.69);
+}
+.desktop-4 .text3 {
+  position: absolute;
+  left: 35%;
+  bottom: 35px;
+  translate: -50% 0;
+  text-align: left;
+  font-family: 'Calistoga';
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.69);
+}
