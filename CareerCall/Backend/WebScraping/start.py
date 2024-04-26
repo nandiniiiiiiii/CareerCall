@@ -7,11 +7,37 @@ import pandas as pd
 print(sys.argv[1], "hello")
 
 def getdata(page):
+    d = {"title": [],"company": [] , "link": []}
+    # elements = page.query_selector_all('.resultContent')    
+    # for ele in elements:
+    #     print(ele)
+    #     # title = ele.query_selector_all('.jcs-JobTitle>span').__getattribute__('title')
+    #     # link = ele.query_selector_all('.jcs-JobTitle').__getattribute__('href')
+    #     # print(title)
+    #     # print(f"indeed.com{link}")
     elements = page.query_selector_all('.jcs-JobTitle>span')
     for element in elements:
         # print(element.text())
         title = element.get_attribute('title')
-        print(title)
+        d['title'].append(title)
+    elements2 = page.query_selector_all('.jcs-JobTitle')
+    for element in elements2:
+        # print(element.text())
+        link = element.get_attribute('href')
+        # print(f"indeed.com{link}")
+        d['link'].append(f"https://indeed.com{link}")
+
+    elements3 = page.query_selector_all('.css-92r8pb')
+    for element in elements3:
+        # print(element.text())
+        company = element.inner_text()
+        # print(company)
+        d['company'].append(company)
+
+    print(d)
+    df = pd.DataFrame.from_dict(d)
+    df.to_csv("./jobs.csv",header=True,index=False)
+        
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
@@ -41,3 +67,4 @@ with sync_playwright() as p:
     # page3.wait_for_timeout(10000)
 
     browser.close()
+    

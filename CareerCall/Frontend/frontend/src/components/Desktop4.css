@@ -1,0 +1,155 @@
+.desktop-4 .job-img-21 {
+    mix-blend-mode: multiply;
+    border-radius: 50px;
+    background: url('C:\Users\Manoj\Dropbox\My PC (LAPTOP-DT2730KE)\Desktop\git1\CareerCall\CareerCall\CareerCall\Frontend\frontend\assets\JobImg21.jpg') 50% / cover no-repeat;
+    position: absolute;
+    padding: 0 0 0 100px;
+    left: 50px;
+    bottom: 300px;
+    width: 350px;
+    height: 250px;
+  }
+  
+  .desktop-4 .job-img-3 {
+    mix-blend-mode: multiply;
+    background: url('C:\Users\Manoj\Dropbox\My PC (LAPTOP-DT2730KE)\Desktop\git1\CareerCall\CareerCall\CareerCall\Frontend\frontend\assets\JobImg3.jpg') 60% / cover no-repeat;
+    margin-bottom: 597px;
+    width: 500px;
+    height: 340px;
+  }
+  .desktop-4 .about-us {
+    position: relative;
+    margin: 40px 539px 10px 30px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Lemon';
+    font-weight: 400;
+    font-size: 55px;
+    color: var(--foundation-purplepurple-500, #6200EE);
+  }
+  .desktop-4 .container {
+    width: 99.5vw;
+    height: auto;
+    background: url('C:\Users\Manoj\Dropbox\My PC (LAPTOP-DT2730KE)\Desktop\git1\CareerCall\CareerCall\CareerCall\Frontend\frontend\assets\Job51.jpg') 50% / cover no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* padding: 118px 108px 417px 104px; */
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .desktop-4 .container-1 {
+    display:flex;
+    flex-direction: row;
+    align-items: center; /* Align items vertically in the center */
+    width: 100vw;
+
+  }
+  
+  .desktop-4 .container-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .desktop-4 .container {
+    margin: 0 24.9px 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Calistoga';
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+  }
+  .desktop-4 .rectangle-10 {
+    opacity: 0.5;
+    mix-blend-mode: color;
+    background: var(--foundation-purplepurple-400, #8133F1);
+    position: absolute;
+    left: 31px;
+    top: 40px;
+  }
+  .desktop-4 .rectangle-11 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: var(--foundation-blue-lighthover-1, #EDE8FF);
+    position: absolute;
+    left: 50%;
+    top: 57px;
+    translate: -50% 0;
+    width: 1100px;
+    height: 900px;
+  }
+  .desktop-4 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+
+  }
+  .desktop-4 .text1 {
+    opacity: 1;
+    right: 20px; /* Adjust the distance from the right side */
+    bottom: 210px;
+    width: 500px; /* Set the width of the box */
+    padding: 200px 10px 10px 55px;
+    position: relative;
+    overflow-wrap: break-word;
+    font-family: 'Calistoga';
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.69);
+    text-align: justify;
+    overflow-wrap: break-word;
+  }
+  .desktop-4 .frame-1 {
+    border-radius: 0 0 15px 15px;
+    background: var(--foundation-blue-lighthover, #EDE8FF);
+    margin-right: 3px;
+    display: flex;
+    flex-direction: row;
+    padding: 26px 0 25px 45px;
+    box-sizing: border-box;
+  }
+  .desktop-4 .career-call {
+    margin-right: 26px;
+    width: 310.2px;
+    overflow-wrap: break-word;
+    font-family: 'Lemon';
+    font-weight: 400;
+    font-size: 45px;
+    color: var(--foundation-purplepurple-500, #6200EE);
+  }
+  .desktop-4 .home {
+    margin: 3px 25.4px 0 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Calistoga';
+    font-weight: 400;
+    font-size: 32px;
+    color: #000000;
+  }
+  .desktop-4 .text2 {
+    position: absolute;
+    right: 20px; /* Adjust the distance from the right side */
+    bottom: 330px;
+    width: 500px; /* Set the width of the box */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    text-align: justify;
+    overflow-wrap: break-word;
+    font-family: 'Calistoga';
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.69);
+  }
+  .desktop-4 .text3 {
+    position: absolute;
+    bottom: 200px;
+    padding-left: 40px;
+    font-family: 'Calistoga';
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.69);
+  }

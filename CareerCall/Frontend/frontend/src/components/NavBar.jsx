@@ -5,27 +5,31 @@ import styled from "styled-components" //helps in styling
 
 function NavBar() {
   return (
-    <Container>
-      <nav>
-        <h1 id="logo">Career Call</h1>
-        <div className="topnav">
-          <Link className="active btn" to="/"><b>Home</b></Link>
-          <Link className="btn" to="/about"><b>About</b></Link>
-          <Link className="btn" to="/contact"><b>Contact</b></Link>
-        </div>
-        <div className="topnav-right">
-          <Link className="login" to="/signin">Login</Link>
-          <Link className="register" to="/signup">Register</Link>
-        </div>
-      </nav>
-    </Container>
+    <>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+      </style>
+      <Container>
+        <nav>
+          <h1 id="logo">Career Call</h1>
+          <div className="topnav">
+            <Link className="active btn" to="/"><b>Home</b></Link>
+            <Link className="btn" to="/about"><b>About</b></Link>
+          </div>
+          <div className="topnav-right">
+            <Link className="login" to="/signin">Login</Link>
+            <Link className="register" to="/signup">Register</Link>
+          </div>
+        </nav>
+      </Container>
+    </>
   )
 }
 
 const Container = styled.div`
   h1{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: darkcyan;
+    font-family: 'Lemon';
+    color: #6200EE;
     font-size: 35px;
     text-align: center;
     transform: translate(0%,-70%);
@@ -37,7 +41,7 @@ const Container = styled.div`
     gap: 150px;
     justify-content: center;
     aligin-items: center;
-    background-color:red;
+    background-color:#EDE8FF;
   }
   .topnav {
     overflow: hidden;

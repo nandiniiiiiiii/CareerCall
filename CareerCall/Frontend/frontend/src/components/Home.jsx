@@ -6,8 +6,12 @@ import styled from "styled-components" //helps in styling
 function Home() {
     return (
         <Container>
-            <SearchBar />
-            <Content/>
+            <div className='content'>
+                <SearchBar />
+                <div className='item'>
+                    <Content />
+                </div>
+            </div>
         </Container>
     )
 }
@@ -15,8 +19,16 @@ function Home() {
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export default Home
